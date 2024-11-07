@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #cee3ea !important;
+}
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* Adjust the background color as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+}
+
+/* Customize the appearance of the navbar */
+.customizenav {
+    background-color: #f8f9fa; /* Change this to your preferred color */
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000; /* Optional border */
+}
+
+/* Navbar brand styling */
+.navtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; 
+}
+
+/* Login/Signup button styling */
+.loginsignup {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.loginsignup a {
+    color: white;
+    text-decoration: none;
+}
+
+.loginsignup:hover {
+    background-color: #0056b3;
+}
+
+
+:root{
+    --primary-color: #254E58; /* Dark Teal */
+    --secondary-color: #b6f0ef; /* Light Teal */
+    --dark-taupe: #4F4A41; /* Dark Taupe */
+    --deep-green-blue: #112D32; /* Deep Green-Blue */
+    --muted-brown-grey: #6E6658; /* Muted Brown-Grey */
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.bgimage{
+    width: 100%;    
+    height: 70vh;
+    background-image: url("../images/teal-885329_1920.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 50px;
+    background-image: url('path_to_your_image.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+}
+.user-list {
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.9); /* Slight transparency for better visibility */
+    color: white;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+.user-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(52, 73, 94, 0.8);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.user:hover {
+    background-color: #1abc9c;
+}
+.chat-area {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(194, 194, 194, 0.9); /* White background with slight transparency */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.chat-header {
+    background-color: #069bff;
+    padding: 20px;
+    color: rgb(119, 0, 113);
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(194, 194, 194, 0.6);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    margin-bottom: 10px;
+}
+.message.sent {
+    text-align: right;
+}
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #bdc3c7;
+}
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.chat-input button:hover {
+    background-color: #1abc9c;
+}

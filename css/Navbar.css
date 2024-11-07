@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color:#095A55;
+    --secondary-color:#FFF38E;
+    --darkershadeofsecondarycolor:#b2aa63;
+    --text-color:#323232;
+    --complementary-colorof-primary:#5a090e;
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.navbar{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.customizenav{
+    background-color: var(--primary-color)!important;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.collapse ul li{
+    padding: 8px 15px;
+    font-size: var(--heading-h4-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.collapse ul li a:hover{
+    color: var(--secondary-color)!important;
+}
+.navtitle{
+    font-size: var(--heading-h2-font-size)!important;
+    color: var(--secondary-color)!important;
+    margin: 0 2%;
+}
+.loginsignup{
+    background-color: var(--secondary-color)!important;
+    color: var(--complementary-colorof-primary)!important;
+    border: 1px solid var(--complementary-colorof-primary)!important;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: var(--heading-h5-font-size);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.loginsignup:hover{
+    background-color: var(--darkershadeofsecondarycolor)!important;
+    color: var(--secondary-color)!important;
+}

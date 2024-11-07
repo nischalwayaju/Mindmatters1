@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #cee3ea !important;
+}
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* Adjust the background color as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+}
+
+/* Customize the appearance of the navbar */
+.customizenav {
+    background-color: #f8f9fa; /* Change this to your preferred color */
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000; /* Optional border */
+}
+
+/* Navbar brand styling */
+.navtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; 
+}
+
+/* Login/Signup button styling */
+.loginsignup {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.loginsignup a {
+    color: white;
+    text-decoration: none;
+}
+
+.loginsignup:hover {
+    background-color: #0056b3;
+}
+
+
+:root{
+    --primary-color: #254E58; /* Dark Teal */
+    --secondary-color: #b6f0ef; /* Light Teal */
+    --dark-taupe: #4F4A41; /* Dark Taupe */
+    --deep-green-blue: #112D32; /* Deep Green-Blue */
+    --muted-brown-grey: #6E6658; /* Muted Brown-Grey */
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+
+.mainbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.box {
+    margin: 3% 5%;  
+    position: relative;
+    width: 800px;
+    max-width: 100%; /* Make it responsive */
+    height: 520px;
+    background: #28292D;
+    border-radius: 8px;
+    overflow: auto;
+    padding: 20px; /* Added padding for content */
+}
+
+h2 {
+    color: #45f3ff;
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+    margin: 20px;
+    color: whitesmoke;
+}
+
+.profilepic {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+form {
+    position: absolute;
+    top: 130px;
+    right: 30px;
+    flex-direction: column;
+    align-items: center;  
+    font-size: 25px;
+}
+
+input[type="file"] {
+    display: none;
+    align-self: center;
+}
+
+button[type="submit"] {
+    display: flex;
+    color: rgb(39, 236, 62);
+    background-color: #28292D;
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.image1 {
+    height: 100px;
+    width: 100px;
+}
+
+.logout {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        height: auto; /* Make height auto for smaller screens */
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .profilepic {
+        width: 80px; /* Smaller profile picture */
+        height: 80px; 
+        top: 10px; /* Adjusted position */
+        right: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 20px;
+        padding: 0 8px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .mainbody {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    .box {
+        margin: 0; /* Remove margin for small screens */
+        padding: 15px; /* Added padding for content */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .profilepic {
+        width: 70px; /* Even smaller profile picture */
+        height: 70px; 
+        top: 5px; /* Adjusted position */
+        right: 5px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 0 5px; /* Adjusted padding */
+    }
+}

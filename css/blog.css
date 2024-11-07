@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cee3ea !important;
+
+}
+
+/* Sticky Navbar */
+.sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; /* Adjust the background color as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+}
+
+/* Customize the appearance of the navbar */
+.customizenav {
+    background-color: #f8f9fa; /* Change this to your preferred color */
+    padding: 10px 20px;
+    border-bottom: 1px solid #000000; /* Optional border */
+}
+
+/* Navbar brand styling */
+.navtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; 
+}
+
+/* Login/Signup button styling */
+.loginsignup {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.loginsignup a {
+    color: white;
+    text-decoration: none;
+}
+
+.loginsignup:hover {
+    background-color: #0056b3;
+}
+:root{
+    --primary-color: #254E58; 
+    --secondary-color: #88BDBC; 
+    --dark-taupe: #4F4A41; 
+    --deep-green-blue: #112D32;
+    --muted-brown-grey: #6E6658; 
+    --heading-h1-font-size: 2.75rem;
+    --heading-h2-font-size: 2rem;
+    --heading-h3-font-size: 1.5rem;
+    --heading-h4-font-size: 1.125rem;
+    --heading-h5-font-size: 1rem;
+}
+.toggle {
+    display: none;
+}
+
+/* Blog Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #112D32;
+}
+
+h1 {
+    text-align: center;
+    color: #254E58;
+    margin-bottom: 20px;
+}
+
+.blog-categories {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-categories button {
+    background-color: #254E58;
+    border: 1px solid #254E58; 
+    color: #fff; 
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.blog-categories button:hover {
+    background-color: #88BDBC;
+    color: #112D32;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 160px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px 0;
+}
+
+.blog-content h3 {
+    color: #112D32;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    font-size: 0.9em;
+    color: #6E6658; 
+}
+
+.blog-content .read-more {
+    display: inline-block;
+    background-color: #254E58; 
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.blog-content .read-more:hover {
+    background-color: #4F4A41; 
+}
+
+.blog-meta {
+    color: #6E6658;
+    font-size: 0.8em;
+}
+
+.pages {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footermain {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.h1 {
+    color: #254E58;
+}
+.footermain {
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
+    padding: 20px
+}
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-logos {
+    margin-bottom: 15px;
+}
+
+.footer-logos a {
+    margin: 0 15px; 
+    display: inline-block;
+}
+
+.footer-logos img {
+    width: 20px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-logos img:hover {
+    opacity: 1;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+

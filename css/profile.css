@@ -115,7 +115,7 @@ form {
     right: 30px;
     flex-direction: column;
     align-items: center;  
-    font-size: 25px;
+    font-size: 20px;
 }
 
 input[type="file"] {
@@ -133,7 +133,7 @@ button[type="submit"] {
     border: 2px solid white;
     padding: 0 10px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .image1 {
